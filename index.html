@@ -5,12 +5,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>银临茶舍</title>
-  <link rel="icon" href="favicon.svg" type="image/svg" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="./src/index.css" rel="stylesheet">
 </head>
 
 <body>
-  <p class="text-4xl font-bold">Hello World!</p>
+  <!-- 顶栏 -->
+  <nav class="fixed top-0 flex items-center w-full h-16 gap-2 px-[10vw] bg-secondary">
+    <img class="size-8" src="favicon.ico" alt="银临茶舍 Logo" />
+    <p class="text-xl font-bold">银临茶舍</p>
+  </nav>
+  <!-- 顶栏占位符 -->
+  <div class="w-full h-16"></div>
+
+  <!-- 主宣传页 -->
+  <div class="bg-secondary px-[10vw] py-16 flex flex-col gap-4">
+    <p class="text-4xl font-bold text-primary">银临茶舍</p>
+    <p class="text-lg">集资讯、听歌、美图、论坛、社交于一体的小银子聚集地</p>
+
+    <div class="flex gap-4">
+      <button type="button" class="px-4 py-2 bg-primary text-white rounded-lg">下载</button>
+      <a href="https://web.yinlin.love" target="_blank"
+        class="px-4 py-2 bg-white text-primary rounded-lg font-bold">访问网页端</a>
+    </div>
+  </div>
+
+  <!-- 跨平台 -->
+  <div class="bg-secondary px-[10vw] py-16 flex flex-col gap-4">
+    <p class="text-2xl font-bold text-primary">跨平台</p>
+    <p>基于 Kotlin Mutliplatform 技术，支持移动端（Android / iOS<span class="text-neutral-500">*</span>）、桌面端（Windows / MacOS /
+      Linux）、网页端访问，数据互通<span class="text-neutral-500">**</span></p>
+
+    <div class="flex flex-col gap-1 text-sm text-neutral-500">
+      <p>*：iOS 端目前仅支持侧载</p>
+      <p>**：部分功能并非全平台可用</p>
+    </div>
+  </div>
+
+  <div class="bg-secondary flex justify-center py-4 gap-2 text-sm text-neutral-500">
+    <p>©银临茶舍</p>
+    <p>皖ICP备2024063749号</p>
+  </div>
 </body>
 
 </html>
